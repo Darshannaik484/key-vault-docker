@@ -1,0 +1,264 @@
+.algorithm-details-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.algorithm-details-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+.section-title {
+  margin-bottom: 16px !important;
+  color: #2d3748;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.title-icon {
+  margin-right: 12px;
+  color: #667eea;
+  font-size: 28px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.algorithm-collapse {
+  background: transparent;
+  border: none;
+}
+
+.algorithm-collapse .ant-collapse-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.algorithm-collapse .ant-collapse-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.algorithm-collapse .ant-collapse-item-active {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.algorithm-header {
+  padding: 8px 0;
+}
+
+.algorithm-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.algorithm-name {
+  margin: 0 !important;
+  color: #2d3748;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.algorithm-tag {
+  font-weight: 500;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+}
+
+.algorithm-description {
+  display: block;
+  margin-top: 8px;
+  color: #4a5568;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.algorithm-content {
+  padding: 24px 0;
+}
+
+.details-card,
+.pros-cons-card,
+.logic-card {
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.card-icon {
+  margin-right: 8px;
+  color: #667eea;
+}
+
+.details-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item .ant-typography {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.pros-cons {
+  display: grid;
+  gap: 20px;
+}
+
+.pros-title {
+  color: #52c41a;
+  font-family: 'Inter', sans-serif;
+}
+
+.cons-title {
+  color: #ff4d4f;
+  font-family: 'Inter', sans-serif;
+}
+
+.pros ul,
+.cons ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.pros li,
+.cons li {
+  margin-bottom: 6px;
+  font-family: 'Inter', sans-serif;
+  color: #4a5568;
+}
+
+.logic-content {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.logic-text {
+  font-family: 'Inter', 'Monaco', 'Consolas', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2d3748;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .algorithm-details-container {
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+  
+  .section-header {
+    padding: 16px 0;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+  
+  .algorithm-content {
+    padding: 16px 0;
+  }
+  
+  .algorithm-header {
+    padding: 4px 0;
+  }
+  
+  .algorithm-name {
+    font-size: 16px;
+  }
+  
+  .algorithm-description {
+    font-size: 13px;
+  }
+  
+  .details-grid {
+    gap: 8px;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .pros-cons {
+    gap: 16px;
+  }
+  
+  .logic-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .algorithm-details-container {
+    padding: 0 12px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .title-icon {
+    font-size: 24px;
+  }
+  
+  .algorithm-name {
+    font-size: 14px;
+  }
+  
+  .algorithm-tag {
+    font-size: 12px;
+  }
+  
+  .algorithm-description {
+    font-size: 12px;
+  }
+}

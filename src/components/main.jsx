@@ -29,7 +29,7 @@ const { TextArea } = Input;
 const { TabPane } = Tabs;
 const { Panel } = Collapse;
 
-const EncryptionToolbox = () => {
+const EncryptionToolboxx = () => {
   const [text, setText] = useState("");
   const [result, setResult] = useState("");
   const [key, setKey] = useState("");
@@ -489,4 +489,4 @@ const EncryptionToolbox = () => {
   );
 };
 
-export default EncryptionToolbox;
+export default EncryptionToolboxx;

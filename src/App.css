@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.App > div {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Enhanced typography and spacing */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 600;
+  color: #2d3748;
+  line-height: 1.3;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Card enhancements */
+.ant-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+/* Button enhancements */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Input enhancements */
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-select-selector {
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused,
+.ant-select-focused .ant-select-selector {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Select enhancements */
+.ant-select {
+  font-family: 'Inter', sans-serif;
+}
+
+.ant-select-item {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tabs enhancements */
+.ant-tabs-tab {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+/* Tag enhancements */
+.ant-tag {
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .ant-card {
+    margin: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .ant-card-body {
+    padding: 16px;
   }
 }
