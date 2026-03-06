@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: keyvault-app:latest
+    container_name: keyvault-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
