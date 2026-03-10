@@ -1,16 +1,19 @@
-# -------- Stage 1: Build React App --------
+# ---------- Stage 1: Build ----------
 FROM node:18-alpine AS builder
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install
+
+RUN npm ci
 
 COPY . .
+
 RUN npm run build
 
-# -------- Stage 2: Production Server --------
-FROM nginx:alpine
+
+# ---------- Stage 2: Production ----------
+FROM nginx:stable-alpine
 
 COPY --from=builder /app/build /usr/share/nginx/html
 

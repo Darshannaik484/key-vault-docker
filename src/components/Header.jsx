@@ -11,7 +11,7 @@ const Header = () => {
         <div className="breadcrumb">
           {/* Home &gt;&gt; Crypto Tools &gt;&gt; Text Encryption And Decryption */}
         </div>
-        <h1 className="main-title">KEY VAULT - Encrypt & Decrypt Text Online</h1>
+        <h1 className="main-title">KEY VAULT - Encryption & Decryption Text Online</h1>
       </div>
     </div>
   );
